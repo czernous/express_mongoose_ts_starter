@@ -15,7 +15,7 @@
     "license": "ISC",
     "husky": {
         "hooks": {
-            "pre-commit": "echo \"[Husky] pre-commit\" && pretty-quick --staged && eslint --fix",
+            "pre-commit": "echo \"[Husky] pre-commit\" && pretty-quick --staged",
             "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
             "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
             "post-applypatch": "echo \"[Husky] post-applypatch\"",
