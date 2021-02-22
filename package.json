@@ -9,7 +9,7 @@
         "start": "node dist/server.js",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest"
     },
     "author": "Anton Chernous",
     "license": "ISC",
@@ -53,6 +53,7 @@
     "devDependencies": {
         "@types/dotenv": "^8.2.0",
         "@types/express": "^4.17.11",
+        "@types/jest": "^26.0.20",
         "@types/mongoose": "^5.10.3",
         "@typescript-eslint/eslint-plugin": "^4.14.2",
         "@typescript-eslint/parser": "^4.14.2",
@@ -64,10 +65,12 @@
         "eslint-plugin-prettier": "^3.3.1",
         "eslint-plugin-promise": "^4.2.1",
         "husky": "^4.3.8",
+        "jest": "^26.6.3",
         "lint-staged": "^10.5.4",
         "nodemon": "^2.0.7",
         "prettier": "^2.2.1",
         "pretty-quick": "^3.1.0",
+        "ts-jest": "^26.5.1",
         "ts-node": "^9.1.1",
         "typescript": "^4.1.3"
     },
