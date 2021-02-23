@@ -1,9 +1,10 @@
 import { NextFunction, Request, Response, Router } from 'express';
 const index: Router = Router();
 
-index.get('/', async (req: Request, res: Response, next: NextFunction) => {
+index.get('/', (req: Request, res: Response, next: NextFunction) => {
     try {
-        res.status(200).json({ success: true, message: 'Welcome to index route' });
+        const SUCCESS_MESSAGE = 'Welcome to index route';
+        res.status(200).json({ success: true, message: SUCCESS_MESSAGE });
     } catch (err) {
         res.status(400).json({ success: false, message: 'something went wrong' });
         next(err);
